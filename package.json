@@ -1,0 +1,33 @@
+{
+  "name": "electron-quick-start-typescript",
+  "version": "1.0.0",
+  "description": "A minimal Electron application written with Typescript",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js",
+    "debug:main": "electron --inspect=5858 ./dist/main.js",
+    "build:renderer": "APP_ROOT=src/renderer umi build"
+  },
+  "repository": "https://github.com/electron/electron-quick-start-typescript",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo",
+    "typescript"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-debug": "^2.0.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3",
+    "umi": "^2.4.4",
+    "umi-plugin-react": "^1.4.2"
+  }
+}
