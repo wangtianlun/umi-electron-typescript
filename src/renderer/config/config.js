@@ -4,12 +4,13 @@ const cwd = process.cwd();
 export default {
   history: 'hash',
   outputPath: `../../app/dist/renderer`,
+  publicPath: './',
   plugins: [
     ['umi-plugin-react', {
       antd: true,
       dva: true,
       dynamicImport: true,
-      title: 'srp-umi',
+      title: 'umi-electron-typescript',
       dll: true,
       routes: {
         exclude: [],
@@ -21,5 +22,9 @@ export default {
         ],
       },
     }],
-  ]
+  ],
+  routes: [{
+    path: '/',
+    component: './index'
+  }]
 }
