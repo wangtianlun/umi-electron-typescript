@@ -1,19 +1,21 @@
 {
-  "name": "electron-quick-start-typescript",
+  "name": "umi-electron-typescript",
   "version": "1.0.0",
-  "description": "A minimal Electron application written with Typescript",
+  "description": "an example based on umijs + electron + typescript",
   "main": "./dist/main.js",
   "scripts": {
-    "build": "tsc",
+    "build-main": "NODE_ENV=production webpack --config ./build/webpack.main.prod.config.js",
     "watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build && electron ./dist/main.js",
+    "start": "npm run build-main && electron ./dist/main.js",
     "debug:main": "electron --inspect=5858 ./dist/main.js",
+    "start:renderer": "APP_ROOT=src/renderer umi dev",
     "build:renderer": "APP_ROOT=src/renderer umi build"
   },
-  "repository": "https://github.com/electron/electron-quick-start-typescript",
+  "repository": "https://github.com/wangtianlun/umi-electron-typescript",
   "keywords": [
     "Electron",
+    "umi",
     "quick",
     "start",
     "tutorial",
@@ -23,11 +25,18 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@types/node": "^10.12.18",
     "electron": "^2.0.2",
     "electron-debug": "^2.0.0",
+    "ts-loader": "^5.3.3",
     "tslint": "^5.10.0",
-    "typescript": "^2.8.3",
+    "typescript": "^3.2.4",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "umi": "^2.4.4",
-    "umi-plugin-react": "^1.4.2"
+    "umi-plugin-react": "^1.4.2",
+    "webpack": "4.28.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-merge": "^4.2.1"
   }
 }
