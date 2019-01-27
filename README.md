@@ -28,6 +28,12 @@ And then start the main process
   $ yarn start
 ```
 
+## Packaging
+
+```javascript
+  $ yarn pack
+```
+
 ## screenshot
 
 ![umi-electron-typescript-image](http://img.souche.com/f2e/f26a29f3232f33dfa1ade9b48df64b6b.png)
