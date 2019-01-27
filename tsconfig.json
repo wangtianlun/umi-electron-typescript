@@ -6,6 +6,7 @@
     "outDir": "dist",
     "baseUrl": ".",
     "jsx": "preserve",
+    "allowJs": true,
     "paths": {
       "*": ["node_modules/*"]
     }
