@@ -1,5 +1,6 @@
 import { app, BrowserWindow } from "electron";
 import * as path from "path";
+import * as url from "url";
 
 let mainWindow: Electron.BrowserWindow;
 
@@ -12,7 +13,13 @@ function createWindow() {
   if (process.env.NODE_ENV === "development") {
     mainWindow.loadURL("http://localhost:8000/#/");
   } else {
-    mainWindow.loadFile(path.join(__dirname, "../app/dist/renderer/index.html"));
+    mainWindow.loadURL(
+      url.format({
+        pathname: path.join(__dirname, "../renderer/index.html"),
+        protocol: "file:",
+        slashes: true,
+      }),
+    );
   }
   mainWindow.webContents.openDevTools();
 
