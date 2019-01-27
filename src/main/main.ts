@@ -12,6 +12,7 @@ function createWindow() {
 
   if (process.env.NODE_ENV === "development") {
     mainWindow.loadURL("http://localhost:8000/#/");
+    mainWindow.webContents.openDevTools();
   } else {
     mainWindow.loadURL(
       url.format({
@@ -21,7 +22,6 @@ function createWindow() {
       }),
     );
   }
-  mainWindow.webContents.openDevTools();
 
   mainWindow.on("closed", () => {
     mainWindow = null;
