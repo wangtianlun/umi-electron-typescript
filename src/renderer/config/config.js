@@ -3,7 +3,7 @@ const cwd = process.cwd();
 
 export default {
   history: 'hash',
-  outputPath: `../../app/dist/renderer`,
+  outputPath: `../../dist/renderer`,
   publicPath: './',
   plugins: [
     ['umi-plugin-react', {
