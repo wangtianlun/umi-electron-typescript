@@ -4,13 +4,15 @@
   "description": "an example based on umijs + electron + typescript",
   "main": "./dist/main.js",
   "scripts": {
-    "build-main": "NODE_ENV=production webpack --config ./build/webpack.main.prod.config.js",
+    "start":"npm run build-main-dev && electron ./dist/main/main.js",
+    "start:main": "npm run build-main-dev && electron ./dist/main/main.js",
+    "start:renderer": "APP_ROOT=src/renderer umi dev",
+    "build-main-prod": "NODE_ENV=production webpack --config ./build/webpack.main.prod.config.js",
+    "build-main-dev": "NODE_ENV=development webpack --config ./build/webpack.main.config.js",
+    "build:renderer": "APP_ROOT=src/renderer umi build",
     "watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build-main && electron ./dist/main.js",
-    "debug:main": "electron --inspect=5858 ./dist/main.js",
-    "start:renderer": "APP_ROOT=src/renderer umi dev",
-    "build:renderer": "APP_ROOT=src/renderer umi build"
+    "debug:main": "electron --inspect=5858 -w ./dist/main/main.js"
   },
   "repository": "https://github.com/wangtianlun/umi-electron-typescript",
   "keywords": [
@@ -36,7 +38,6 @@
     "umi-plugin-react": "^1.4.2",
     "webpack": "4.28.0",
     "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^2.9.7",
     "webpack-merge": "^4.2.1"
   }
 }
