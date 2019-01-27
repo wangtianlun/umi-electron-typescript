@@ -1,5 +1,12 @@
 # umi-electron-typescript
 
+### An example based on umijs + electron + typescript
+
+[![Umi](https://img.souche.com/f2e/8be19b9c2c946863c4b5335e7edde3a1.png)](https://umijs.org/)
+[![Webpack](https://img.souche.com/f2e/1715af96d26c9e4176f3de8895c3c15e.png)](https://webpack.js.org/)
+[![TypeScript](https://img.souche.com/f2e/abaffc28828246dcca08eae82a0b34c3.png)](https://www.typescriptlang.org/)
+[![Electron](https://img.souche.com/f2e/4f18b23a82d106ce023cdaf17c6dfd51.png)](https://electronjs.org/)
+
 ## Install
 
 First, clone the repo via git:
