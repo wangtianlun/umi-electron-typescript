@@ -2,8 +2,8 @@
 
 ### An example based on umijs + electron + typescript
 
-[![Umi](https://img.souche.com/f2e/8be19b9c2c946863c4b5335e7edde3a1.png)](https://umijs.org/)
-[![Webpack](https://img.souche.com/f2e/1715af96d26c9e4176f3de8895c3c15e.png)](https://webpack.js.org/)
+[![Umi](https://img.souche.com/f2e/a92fc3dfdb4918578861c42bbfcfaf7f.png)](https://umijs.org/)
+[![Webpack](https://img.souche.com/f2e/cdc96229f3f9b7068a9b13f7658a9b0e.png)](https://webpack.js.org/)
 [![TypeScript](https://img.souche.com/f2e/abaffc28828246dcca08eae82a0b34c3.png)](https://www.typescriptlang.org/)
 [![Electron](https://img.souche.com/f2e/4f18b23a82d106ce023cdaf17c6dfd51.png)](https://electronjs.org/)
 
