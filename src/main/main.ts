@@ -9,8 +9,11 @@ function createWindow() {
     width: 800,
   });
 
-  mainWindow.loadFile(path.join(__dirname, "../app/dist/renderer/index.html"));
-
+  if (process.env.NODE_ENV === "development") {
+    mainWindow.loadURL("http://localhost:8000/#/");
+  } else {
+    mainWindow.loadFile(path.join(__dirname, "../app/dist/renderer/index.html"));
+  }
   mainWindow.webContents.openDevTools();
 
   mainWindow.on("closed", () => {
