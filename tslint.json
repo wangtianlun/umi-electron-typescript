@@ -11,7 +11,8 @@
     "no-bitwise": true,
     "no-conditional-assignment": true,
     "no-consecutive-blank-lines": false,
-    "ordered-imports": false
+    "ordered-imports": false,
+    "quotemark": [true, "single"]
   },
   "jsRules": {
     "max-line-length": {

@@ -30,7 +30,8 @@
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "debug:main": "electron --inspect=5858 -w ./dist/main/main.js",
     "pack": "npm run build:renderer && npm run build-main-prod && electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "prettier": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,less}\""
   },
   "repository": "https://github.com/wangtianlun/umi-electron-typescript",
   "keywords": [
@@ -53,6 +54,7 @@
     "electron-debug": "^2.0.0",
     "electron-webpack": "^2.6.2",
     "electron-webpack-ts": "^3.1.1",
+    "prettier": "1.16.4",
     "ts-loader": "^5.3.3",
     "tslint": "^5.10.0",
     "typescript": "^3.2.4",
