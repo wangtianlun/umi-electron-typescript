@@ -1,5 +1,5 @@
 export default {
   state: {
-    name: "global",
+    name: 'global',
   },
 };

@@ -9,5 +9,5 @@ module.exports = merge.smart(baseConfig, {
   // plugins: [
   //   new UglifyJsPlugin()
   // ],
-  mode: 'production'
+  mode: 'production',
 });
