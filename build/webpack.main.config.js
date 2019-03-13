@@ -12,7 +12,7 @@ module.exports = merge.smart(baseConfig, {
     rules: [
         {
             test: /\.tsx?$/,
-            loader: 'ts-loader',
+            loader: 'awesome-typescript-loader',
             exclude: /node_modules/
         }
     ]
