@@ -15,10 +15,10 @@ First, clone the repo via git:
   git clone git@github.com:wangtianlun/umi-electron-typescript.git
 ```
 
-And then install the dependencies with npm
+And then install the dependencies with yarn
 
 ```javascript
-  $ npm install
+  $ yarn
 ```
 
 ## Starting Development
@@ -38,13 +38,13 @@ And then start the main process
 ## Packaging
 
 ```javascript
-  $ yarn pack
+  $ npm run pack
 ```
 
 If you want to package into dmg(on mac) or zip, you can follow below
 
 ```javascript
-  $ yarn dist
+  $ npm run dist
 ```
 
 ## screenshot
