@@ -32,13 +32,19 @@ First, start the renderer process (default port 8000)
 And then start the main process
 
 ```javascript
-  $ yarn start
+  $ yarn start:main
 ```
 
 ## Packaging
 
 ```javascript
   $ yarn pack
+```
+
+If you want to package into dmg(on mac) or zip, you can follow below
+
+```javascript
+  $ yarn dist
 ```
 
 ## screenshot
