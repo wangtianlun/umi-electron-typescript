@@ -7,6 +7,8 @@
 [![TypeScript](https://img.souche.com/f2e/abaffc28828246dcca08eae82a0b34c3.png)](https://www.typescriptlang.org/)
 [![Electron](https://img.souche.com/f2e/4f18b23a82d106ce023cdaf17c6dfd51.png)](https://electronjs.org/)
 
+[访问中文版](https://github.com/wangtianlun/umi-electron-typescript/blob/master/README.zh-CN.md)
+
 ## Features
 - Support hot reload for main process and renderer process
 - Support typescript
