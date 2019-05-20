@@ -53,6 +53,12 @@ If you want to package into dmg(on mac) or zip, you can follow below
   $ npm run dist
 ```
 
+If you want to package all platforms(eg: mac, windows, linux), you can follow below
+
+```javascript
+  $ npm run dist-all
+```
+
 ## screenshot
 
 ![umi-electron-typescript-image](https://img.souche.com/f2e/f26a29f3232f33dfa1ade9b48df64b6b.png)
