@@ -31,6 +31,7 @@
     "debug:main": "electron --inspect=5858 -w ./dist/main/main.js",
     "pack": "npm run build:renderer && npm run build-main-prod && electron-builder --dir",
     "dist": "electron-builder",
+    "dist-all": "electron-builder -mwl",
     "prettier": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,less}\""
   },
   "repository": "https://github.com/wangtianlun/umi-electron-typescript",
