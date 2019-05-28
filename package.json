@@ -32,7 +32,8 @@
     "pack": "npm run build:renderer && npm run build-main-prod && electron-builder --dir",
     "dist": "electron-builder",
     "dist-all": "electron-builder -mwl",
-    "prettier": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,less}\""
+    "prettier": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,less}\"",
+    "postinstall": "electron-builder install-app-deps"
   },
   "repository": "https://github.com/wangtianlun/umi-electron-typescript",
   "keywords": [
