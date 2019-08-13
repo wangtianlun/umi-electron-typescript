@@ -20,7 +20,7 @@
     "asar": false
   },
   "scripts": {
-    "start": "npm run build-main-dev && electron ./dist/main/main.js",
+    "start": "concurrently \"yarn start:main\" \"yarn start:renderer\"",
     "start:main": "electron-webpack dev",
     "start:renderer": "BROWSER=none APP_ROOT=src/renderer umi dev",
     "build-main-prod": "NODE_ENV=production webpack --config ./build/webpack.main.prod.config.js",
@@ -31,6 +31,7 @@
     "debug:main": "electron --inspect=5858 -w ./dist/main/main.js",
     "pack": "npm run build:renderer && npm run build-main-prod && electron-builder --dir",
     "dist": "electron-builder",
+    "dist-win": "electron-builder -w",
     "dist-all": "electron-builder -mwl",
     "prettier": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,less}\""
   },
@@ -60,15 +61,11 @@
     "tslint": "^5.10.0",
     "typescript": "^3.2.4",
     "uglifyjs-webpack-plugin": "^2.1.1",
-    "umi": "^2.6.17",
-    "umi-plugin-react": "^1.7.6",
+    "umi": "^2.8.17",
+    "umi-plugin-react": "^1.9.15",
     "webpack": "4.28.0",
     "webpack-cli": "^3.2.1",
     "webpack-merge": "^4.2.1"
-  },
-  "dependencies": {
-    "http-proxy": "^1.17.0",
-    "umi-plugin-react": "^1.7.6"
   },
   "electronWebpack": {
     "main": {
