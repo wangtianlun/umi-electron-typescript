@@ -29,16 +29,8 @@ And then install the dependencies with yarn
 
 ## Starting Development
 
-First, start the renderer process (default port 8000)
-
 ```javascript
-  $ yarn start:renderer
-```
-
-And then start the main process
-
-```javascript
-  $ yarn start:main
+  $ yarn start
 ```
 
 ## Packaging
