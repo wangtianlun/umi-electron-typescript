@@ -27,16 +27,8 @@
 
 ## 开发
 
-首先通过以下命令启动渲染进程(默认端口：8000)
-
 ```javascript
-  $ yarn start:renderer
-```
-
-然后启动主进程
-
-```javascript
-  $ yarn start:main
+  $ yarn start
 ```
 
 ## 打包
