@@ -31,7 +31,9 @@
     "debug:main": "electron --inspect=5858 -w ./dist/main/main.js",
     "pack": "npm run build:renderer && npm run build-main-prod && electron-builder --dir",
     "dist": "electron-builder",
+    "dist-mac": "electron-builder -m",
     "dist-win": "electron-builder -w",
+    "dist-linux": "electron-builder -l",
     "dist-all": "electron-builder -mwl",
     "prettier": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,less}\"",
     "postinstall": "electron-builder install-app-deps"
