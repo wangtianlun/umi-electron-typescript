@@ -1,6 +1,7 @@
-import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
+import { app, BrowserWindow } from 'electron';
+import setApplicationMenu from './utils/menu';
 
 let mainWindow: Electron.BrowserWindow | null;
 
@@ -9,6 +10,8 @@ function createWindow() {
     height: 600,
     width: 800,
   });
+
+  setApplicationMenu();
 
   global.title = 'Yay! Welcome to umi-electron-typescript!';
 
