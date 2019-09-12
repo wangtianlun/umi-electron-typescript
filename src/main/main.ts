@@ -10,6 +10,8 @@ function createWindow() {
     width: 800,
   });
 
+  global.title = 'Yay! Welcome to umi-electron-typescript!';
+
   if (process.env.NODE_ENV === 'development') {
     mainWindow.loadURL('http://localhost:8000/#/');
     mainWindow.webContents.openDevTools();
