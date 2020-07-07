@@ -56,7 +56,7 @@
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
     "concurrently": "^5.1.0",
-    "electron": "^4.0.5",
+    "electron": "^9.1.0",
     "electron-builder": "^20.38.5",
     "electron-debug": "^2.0.0",
     "electron-webpack": "^2.6.2",
